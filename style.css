@@ -1,0 +1,113 @@
+*:focus{
+    outline: none;
+}
+
+body{
+    background: linear-gradient(#000000, #262726);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+.chatwindow{
+    width: 80%
+}
+
+#activeusers{
+    width: 20%;
+    background-color: rgb(196, 196, 196);
+    border-radius: 10px;
+}
+
+#activeusers h2{
+    text-align: center;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+    border-top-left-radius: 10px;
+}
+
+#activeusers p{
+    padding: 10px;
+    margin: 3px 0px;
+    border-bottom: 0.5px solid grey;
+    background-color: #fff;
+}
+
+#activeusers p::after{
+    content: '';
+   display: inline-block;
+   margin-left: 10px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50px;
+   background-color: #0bac33;
+}
+
+#message-container{
+    height: 90vh;
+    background-color: #2c2c2c;
+    margin: 10px auto 0px;
+    width: 80%;
+    max-width: 720px;
+    color: white;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+
+
+#send-container{
+    text-align: center;
+    width: 80%;
+    max-width: 720px;
+    margin: 5px auto;
+}
+
+#message-input{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #131313;
+    width: 80%;
+    color: #fff;
+}
+
+.send-btn{
+    border: none;
+    background-color: #0a6822;
+    padding: 10px;
+    border-radius: 15px;
+    width: 15%;
+    color: #ffffffe6;
+}
+
+.message{
+    padding: 12px 15px 12px 10px;
+    margin: 8px;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 75%;
+    text-align: justify;
+}
+.left{
+    float: left;
+    clear:both;
+    background-color: #6d6d6d;
+    color: #ffffffe6;
+}
+.right{
+    float: right;
+    clear: both;
+    background-color: #0a6822;
+    color: #ffffffe6;
+}
+
+.userStatus{
+    float: unset;
+    clear: both;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    color: #ffffffe6;
+}
